@@ -3,40 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reprodutor de áudio</title>
+    <title>reprodução de áudio</title>
 </head>
 <body>
     <h1>
-        Bem-vindo!
+        bem-vindo!
     </h1>
-    <form>
-    <fieldset>
-    <legend>Player de áudio, controle com os botões.</legend>
-    <button id="botao"> tocar</button>
-<<<<<<< HEAD
-    <button id="dvolume"> diminuir volume</button>
-    <button id="avolume"> almentar volume</button>
-=======
-    </fieldset>
-</form>
->>>>>>> 81e56e5719337875b84a825d1f25e415d2ea190e
-    <script>
-        let avolume=document.getElementById("avolume");
-        let dvolume=document.getElementById("dvolume");
-        let botao=document.getElementById("botao");
-botao.onclick=tocarSom;
-dvolume.onclick=abaixar;
-avolume.onclick=almentar;
-var audio=new Audio("music.mp3");
-function tocarSom() {
-    audio.play();
-}
-function abaixar() {
-    audio.volume=0.1;
-}
-function almentar() {
-    audio.volume=1;
-}
-    </script>
+    <form onsubmit="return false;">
+<fieldset>
+    <legend>
+        plays de áudio, interaja com os botões.
+    </legend>
+    <button id="tocar">Tocar</button>
+    <button id="avolume">aumentar volume</button>
+    <button id="dvolume">diminuir volume</button>
+</fieldset>
+    </form>
+    <script src="main.js"></script>
 </body>
 </html>

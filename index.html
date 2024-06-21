@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tocando áudio</title>
+    <title>Reprodutor de áudio</title>
 </head>
 <body>
     <h1>
         Bem-vindo!
     </h1>
+    <form>
+    <fieldset>
+    <legend>Player, controle com os botões</legend>
     <button id="botao"> tocar</button>
+    </fieldset>
+</form>
     <script>
         let botao=document.getElementById("botao");
 botao.onclick=tocarSom;

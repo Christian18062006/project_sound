@@ -9,10 +9,14 @@
     <h1>
         Bem-vindo!
     </h1>
+    <button id="botao"> tocar</button>
     <script>
-window.onload=function() {
-    var audio = new Audio("");
-};
+        let botao=document.getElementById("botao");
+botao.onclick=tocarSom;
+function tocarSom() {
+    var audio=new Audio("music.mp3");
+    audio.play();
+}
     </script>
 </body>
 </html>

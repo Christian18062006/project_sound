@@ -10,12 +10,24 @@
         Bem-vindo!
     </h1>
     <button id="botao"> tocar</button>
+    <button id="dvolume"> diminuir volume</button>
+    <button id="avolume"> almentar volume</button>
     <script>
+        let avolume=document.getElementById("avolume");
+        let dvolume=document.getElementById("dvolume");
         let botao=document.getElementById("botao");
 botao.onclick=tocarSom;
+dvolume.onclick=abaixar;
+avolume.onclick=almentar;
+var audio=new Audio("music.mp3");
 function tocarSom() {
-    var audio=new Audio("music.mp3");
     audio.play();
+}
+function abaixar() {
+    audio.volume=0.1;
+}
+function almentar() {
+    audio.volume=1;
 }
     </script>
 </body>
